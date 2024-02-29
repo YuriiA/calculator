@@ -23,3 +23,9 @@ let calculate = document
       res.value = "Error";
     }
   });
+
+let deleteOne = document
+  .getElementById("delete")
+  .addEventListener("click", () => {
+    res.value = res.value.toString().slice(0, -1);
+  });
